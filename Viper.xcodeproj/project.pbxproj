@@ -28,6 +28,7 @@
 		18D775D822AD963800AE281E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D775DA22AD963800AE281E /* LaunchScreen.storyboard */; };
 		FE8F8D172A49DFFE00722E37 /* TripListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8F8D162A49DFFE00722E37 /* TripListInteractor.swift */; };
 		FE8F8D192A49E05100722E37 /* TripListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8F8D182A49E05100722E37 /* TripListPresenter.swift */; };
+		FE8F8D1B2A49E28000722E37 /* TripListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8F8D1A2A49E28000722E37 /* TripListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		18D775DE22AD96B400AE281E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE8F8D162A49DFFE00722E37 /* TripListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListInteractor.swift; sourceTree = "<group>"; };
 		FE8F8D182A49E05100722E37 /* TripListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListPresenter.swift; sourceTree = "<group>"; };
+		FE8F8D1A2A49E28000722E37 /* TripListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 			children = (
 				FE8F8D162A49DFFE00722E37 /* TripListInteractor.swift */,
 				FE8F8D182A49E05100722E37 /* TripListPresenter.swift */,
+				FE8F8D1A2A49E28000722E37 /* TripListView.swift */,
 			);
 			path = TripListModule;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				0A46782923D7AE980073803D /* Waypoint.swift in Sources */,
 				18D775C322AD944300AE281E /* SceneDelegate.swift in Sources */,
 				0A83577C23D6996200D83533 /* Trip.swift in Sources */,
+				FE8F8D1B2A49E28000722E37 /* TripListView.swift in Sources */,
 				0A80218C23DF478B00166C86 /* MapDataProvider.swift in Sources */,
 				18D775C522AD944300AE281E /* ContentView.swift in Sources */,
 			);
