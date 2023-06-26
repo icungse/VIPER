@@ -38,6 +38,8 @@ struct TripListView: View {
                     .frame(height: 240)
             }
         }
+        .navigationBarTitle("Title", displayMode: .inline)
+        .navigationBarItems(trailing: presenter.makeAddNewButton())
     }
 }
 
@@ -47,6 +49,8 @@ struct TripListView_Previews: PreviewProvider {
         let interactor = TripListInteractor(model: model)
         let presenter = TripListPresenter(interactor: interactor)
         
-        return TripListView(presenter: presenter)
+        return NavigationView {
+            TripListView(presenter: presenter)
+        }
     }
 }

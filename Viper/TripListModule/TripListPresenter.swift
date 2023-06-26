@@ -27,6 +27,7 @@
 /// THE SOFTWARE.
 
 import Combine
+import SwiftUI
 
 class TripListPresenter: ObservableObject {
     @Published var trips: [Trip] = []
@@ -40,5 +41,15 @@ class TripListPresenter: ObservableObject {
         interactor.model.$trips
           .assign(to: \.trips, on: self)
           .store(in: &cancellables)
+    }
+    
+    func makeAddNewButton() -> some View {
+      Button(action: addNewTrip) {
+        Image(systemName: "plus")
+      }
+    }
+
+    func addNewTrip() {
+      interactor.addNewTrip()
     }
 }
