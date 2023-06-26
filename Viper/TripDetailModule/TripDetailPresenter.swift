@@ -64,4 +64,8 @@ class TripDetailPresenter: ObservableObject {
     func save() {
       interactor.save()
     }
+    
+    func makeMapView() -> some View {
+        TripMapView(presenter: TripMapViewPresenter(interactor: interactor))
+    }
 }
