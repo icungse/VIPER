@@ -26,6 +26,7 @@
 		18D775C722AD944400AE281E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D775C622AD944400AE281E /* Assets.xcassets */; };
 		18D775CA22AD944400AE281E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D775C922AD944400AE281E /* Preview Assets.xcassets */; };
 		18D775D822AD963800AE281E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D775DA22AD963800AE281E /* LaunchScreen.storyboard */; };
+		FE5588932A4A432700D5BF14 /* TripDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5588922A4A432700D5BF14 /* TripDetailRouter.swift */; };
 		FE8F8D172A49DFFE00722E37 /* TripListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8F8D162A49DFFE00722E37 /* TripListInteractor.swift */; };
 		FE8F8D192A49E05100722E37 /* TripListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8F8D182A49E05100722E37 /* TripListPresenter.swift */; };
 		FE8F8D1B2A49E28000722E37 /* TripListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8F8D1A2A49E28000722E37 /* TripListView.swift */; };
@@ -59,6 +60,7 @@
 		18D775C922AD944400AE281E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		18D775CE22AD944400AE281E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18D775DE22AD96B400AE281E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE5588922A4A432700D5BF14 /* TripDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailRouter.swift; sourceTree = "<group>"; };
 		FE8F8D162A49DFFE00722E37 /* TripListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListInteractor.swift; sourceTree = "<group>"; };
 		FE8F8D182A49E05100722E37 /* TripListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListPresenter.swift; sourceTree = "<group>"; };
 		FE8F8D1A2A49E28000722E37 /* TripListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListView.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				FE8F8D212A49E9E100722E37 /* TripDetailView.swift */,
 				FE8F8D252A4A01DB00722E37 /* TripMapViewPresenter.swift */,
 				FE8F8D272A4A3ECA00722E37 /* TripMapView.swift */,
+				FE5588922A4A432700D5BF14 /* TripDetailRouter.swift */,
 			);
 			path = TripDetailModule;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				0A20EFAF240EA73A00A0CA27 /* WaypointViewInteractor.swift in Sources */,
 				0A20EFAD240EA73A00A0CA27 /* WaypointViewPresenter.swift in Sources */,
 				18D775C122AD944300AE281E /* AppDelegate.swift in Sources */,
+				FE5588932A4A432700D5BF14 /* TripDetailRouter.swift in Sources */,
 				0A20EFAE240EA73A00A0CA27 /* WaypointView.swift in Sources */,
 				0A83577623D697A300D83533 /* MapView.swift in Sources */,
 				0A20EFA2240EA70900A0CA27 /* TripListCell.swift in Sources */,
