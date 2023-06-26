@@ -27,40 +27,17 @@
 /// THE SOFTWARE.
 
 import Combine
-import SwiftUI
 
-class TripListPresenter: ObservableObject {
-    @Published var trips: [Trip] = []
+class TripDetailInteractor {
+    private let trip: Trip
+    private let model: DataModel
+    let mapInfoProvider: MapDataProvider
     
-    private let interactor: TripListInteractor
     private var cancellables = Set<AnyCancellable>()
-    private let router = TripListRouter()
     
-    init(interactor: TripListInteractor) {
-        self.interactor = interactor
-        
-        interactor.model.$trips
-          .assign(to: \.trips, on: self)
-          .store(in: &cancellables)
-    }
-    
-    func makeAddNewButton() -> some View {
-      Button(action: addNewTrip) {
-        Image(systemName: "plus")
-      }
-    }
-
-    func addNewTrip() {
-      interactor.addNewTrip()
-    }
-    
-    func linkBuild<Content: View>(for trip: Trip, @ViewBuilder content: () -> Content) -> some View {
-        NavigationLink(
-            destination: router.makeDetailView(
-                for: trip,
-                model: interactor.model)
-        ) {
-            content()
-        }
+    init(trip: Trip, model: DataModel, mapInfoProvider: MapDataProvider) {
+        self.trip = trip
+        self.model = model
+        self.mapInfoProvider = mapInfoProvider
     }
 }

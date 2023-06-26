@@ -34,8 +34,10 @@ struct TripListView: View {
     var body: some View {
         List {
             ForEach (presenter.trips, id: \.id) { item in
-                TripListCell(trip: item)
-                    .frame(height: 240)
+                self.presenter.linkBuild(for: item) {
+                    TripListCell(trip: item)
+                        .frame(height: 240)
+                }
             }
         }
         .navigationBarTitle("Roadtrips", displayMode: .inline)
