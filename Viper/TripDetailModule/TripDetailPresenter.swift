@@ -31,6 +31,8 @@ import SwiftUI
 
 class TripDetailPresenter: ObservableObject {
     @Published var tripName: String = "No name"
+    @Published var distanceLabel: String = "Calculating..."
+    @Published var waypoints: [Waypoint] = []
     
     private let interactor: TripDetailInteractor
     let setTripName: Binding<String>
@@ -46,6 +48,16 @@ class TripDetailPresenter: ObservableObject {
         
         interactor.tripNamePublisher
             .assign(to: \.tripName, on: self)
+            .store(in: &cancellables)
+        
+        interactor.$totalDistance
+            .map { "Total Distance: " + MeasurementFormatter().string(from: $0) }
+            .replaceNil(with: "Calculating...")
+            .assign(to: \.distanceLabel, on: self)
+            .store(in: &cancellables)
+        
+        interactor.$waypoints
+            .assign(to: \.waypoints, on: self)
             .store(in: &cancellables)
     }
     
